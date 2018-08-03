@@ -10,7 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+//dd(phpinfo());
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/info', function() {
+phpinfo();
+});
+Route::get('/user', 'UserController@index');

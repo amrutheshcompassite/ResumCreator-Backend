@@ -162,6 +162,13 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Jenssegers\Mongodb\MongodbServiceProvider::class,
+        Dingo\Api\Provider\LaravelServiceProvider::class,
+        Zizaco\Entrust\EntrustServiceProvider::class,
+        Maatwebsite\Excel\ExcelServiceProvider::class,
+        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+        Webpatser\Countries\CountriesServiceProvider::class,
+        Illuminate\Database\DatabaseServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -225,7 +232,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'Moloquent' => Jenssegers\Mongodb\Eloquent\Model::class,
+        'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
     ],
 
 ];
